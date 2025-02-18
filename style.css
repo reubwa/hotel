@@ -48,6 +48,7 @@ a {
 .dp-ci:hover {
     background-color: rgb(206, 157, 125);
     color: #373636;
+    border-radius: 5px;
 }
 .dp-ci:hover a{
     color: #373636;
@@ -71,7 +72,7 @@ h1 {
     background: #f1f0f0;
     border-radius: 8px;
 }
-input {
+input, textarea {
     display: block;
     margin: 10px;
     padding: 5px;
@@ -92,12 +93,16 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 input[type="reset"] {
     margin-left: 0.5px;
 }
+textarea, input[type="date"] {
+    width: 83%;
+    font-family: "Roboto", sans-serif;
+}
 .form-header, .list-header{
     text-align: center;
     padding-top: 10px;
     color: rgb(210, 178, 156);
 }
-input[type="number"],input[type="text"]{
+input[type="number"],input[type="text"],input[type="password"]{
     width: 250px;
 }
 .list-header {
@@ -161,4 +166,7 @@ body {
 }
 .paginator-page:hover{
     background-color: rgb(206, 157, 125);
+}
+label {
+    margin-left: 10px;
 }
